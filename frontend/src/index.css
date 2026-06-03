@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-industrial-900 text-gray-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-industrial-700/50 backdrop-blur-md border border-industrial-500/30 rounded-xl;
+  }
+
+  .glow-border {
+    @apply border border-neon-blue/20 shadow-glow;
+  }
+
+  .kpi-card {
+    @apply glass-card p-6 hover:border-neon-blue/40 transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:text-neon-blue hover:bg-industrial-600/50 transition-all duration-200;
+  }
+
+  .nav-link.active {
+    @apply text-neon-blue bg-industrial-600/70 border-l-2 border-neon-blue;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d3d56;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d5070;
+}
