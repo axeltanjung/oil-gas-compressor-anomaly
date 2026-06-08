@@ -1,12 +1,9 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException
-import numpy as np
-import pandas as pd
 
 from backend.services.inference import inference_service
 from backend.services.health_index import compute_health_index
-from backend.utils.config import DATA_DIR
 
 router = APIRouter(prefix="/compressor", tags=["compressor"])
 

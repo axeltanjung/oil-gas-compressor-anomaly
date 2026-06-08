@@ -13,7 +13,6 @@ from __future__ import annotations
 import json
 import numpy as np
 import pandas as pd
-from pathlib import Path
 
 from backend.utils.config import DATA_DIR, MODELS_DIR, ensure_dirs
 from backend.training.synthetic_data_generator import generate_dataset

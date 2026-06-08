@@ -4,7 +4,6 @@ from fastapi import APIRouter
 import pandas as pd
 import numpy as np
 
-from backend.services.inference import inference_service
 from backend.services.health_index import compute_health_index
 from backend.utils.config import DATA_DIR
 

@@ -9,7 +9,7 @@ import pandas as pd
 from pathlib import Path
 
 from backend.utils.config import MODELS_DIR, DATA_DIR
-from backend.training.preprocessing import engineer_features, load_scaler, transform_features, ALL_FEATURES
+from backend.training.preprocessing import engineer_features, load_scaler, transform_features
 from backend.anomaly.isolation_forest import IsolationForestDetector
 from backend.anomaly.autoencoder import AutoencoderDetector
 from backend.anomaly.vae import VAEDetector

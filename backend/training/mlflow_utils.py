@@ -6,7 +6,7 @@ from __future__ import annotations
 import mlflow
 from pathlib import Path
 
-from backend.utils.config import settings, MLFLOW_DIR
+from backend.utils.config import MLFLOW_DIR
 
 
 def init_mlflow():
