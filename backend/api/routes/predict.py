@@ -1,12 +1,9 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException
-import numpy as np
-import pandas as pd
 
 from backend.services.inference import inference_service
 from backend.explainability.shap_explainer import generate_maintenance_recommendations
-from backend.utils.config import DATA_DIR
 
 router = APIRouter(prefix="/anomaly", tags=["anomaly"])
 

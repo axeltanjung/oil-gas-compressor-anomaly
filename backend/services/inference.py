@@ -6,7 +6,6 @@ from __future__ import annotations
 
 import numpy as np
 import pandas as pd
-from pathlib import Path
 
 from backend.utils.config import MODELS_DIR, DATA_DIR
 from backend.training.preprocessing import engineer_features, load_scaler, transform_features
